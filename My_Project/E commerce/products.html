@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - Plot Bazaar</title>
+  <style>
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    body > *:not(footer) {
+      flex: 1;
+    }
+    body {
+      font-family: "Georgia", serif;
+      background: #0d0d0d;
+      color: #e4dede;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background: #1a1a1a;
+      color: #b30000;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #e4dede;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .product {
+      background: #1a1a1a;
+      padding: 1rem;
+      border: 1px solid #333;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Products</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Explore Our Collection</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Blood Moon Pact</h3>
+        <p>A cursed village signs a contract with a forgotten god…</p>
+        <p><strong>₹585.00</strong></p>
+      </div>
+      <div class="product">
+        <h3>The Widow’s Manor</h3>
+        <p>An abandoned estate whispers secrets of its tragic past…</p>
+        <p><strong>₹587.00</strong></p>
+      </div>
+      <div class="product">
+        <h3>Clockwork Revenant</h3>
+        <p>A mechanical creation seeks revenge on its master…</p>
+        <p><strong>₹586.00</strong></p>
+      </div>
+      <div class="product">
+        <h3>Phantom’s Lament</h3>
+        <p>A haunting melody echoes through the ruins of a forgotten opera house…</p>
+        <p><strong>₹588.00</strong></p>
+      </div>
+      <div class="product">
+        <h3>Shadow’s Embrace</h3>
+        <p>A forbidden romance blooms in the heart of eternal darkness…</p>
+        <p><strong>₹5810.00</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Plot Bazaar. All gothic rights reserved.</p>
+  </footer>
+</body>
+</html>
