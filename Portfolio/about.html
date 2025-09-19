@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Gaurang Pawar</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    body > *:not(footer) {
+        flex: 1;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    header h1 {
+        margin-bottom: 1rem;
+    }
+    header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #444;
+        margin: 1rem 0;
+    }
+    header nav {
+        background-color: #222;
+        padding: 0.5rem 0;
+    }
+    header nav ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+    header nav ul li a:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gaurang Pawar</h1>
+    <img src="Official pic.jpeg" alt="Profile Picture">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>About Me</h2>
+    <p>
+      I am a B.Tech student at PCU, Mohitewadi, passionate about technology and programming.  
+      I enjoy solving problems, building websites, and learning new skills in computer science.  
+      My goal is to become a skilled software developer and contribute to impactful projects.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gaurang Pawar | pawargaurang52@gmail.com</p>
+  </footer>
+</body>
+</html>

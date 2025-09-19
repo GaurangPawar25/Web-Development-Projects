@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotlight Effect</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #222;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .spotlight-container {
+      position: relative;
+      width: 80%;
+      height: 80%;
+      background: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .spotlight-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 60%);
+      pointer-events: none;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.1s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="spotlight-container" id="spotlight">
+    <h1 style="color: white; text-align: center; padding-top: 40%;">Hover to see the Spotlight</h1>
+  </div>
+
+  <script>
+    const spotlight = document.getElementById('spotlight');
+    const spotlightEffect = spotlight.querySelector('::before');
+
+    spotlight.addEventListener('mousemove', (e) => {
+      const rect = spotlight.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      spotlightEffect.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  </script>
+</body>
+</html>

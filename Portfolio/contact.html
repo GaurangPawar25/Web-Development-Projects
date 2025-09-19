@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Gaurang Pawar</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    body > *:not(footer) {
+        flex: 1;
+    }
+    header nav ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        color: #444;
+        transition: color 0.3s ease;
+    }
+    header nav ul li a:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Gaurang Pawar</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Contact Me</h2>
+    <p>Phone: 932*****82</p>
+    <p>Email: <a href="mailto:pawargaurang52@gmail.com">pawargaurang52@gmail.com</a></p>
+
+    <form>
+      <label>Name</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Message</label>
+      <textarea required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gaurang Pawar | pawargaurang52@gmail.com</p>
+  </footer>
+</body>
+</html>
